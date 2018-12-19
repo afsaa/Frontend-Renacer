@@ -9,6 +9,17 @@ import {
   NavItem,
   NavLink
 } from "reactstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import styled from "styled-components";
+
+const CustomNavLink = styled.a`
+  color: gold;
+  :hover {
+    color: grey;
+    border-top: 3px solid gold;
+    border-bottom: 3px solid gold;
+  }
+`;
 
 class AppNavbar extends Component {
   state = {
@@ -24,28 +35,44 @@ class AppNavbar extends Component {
   render() {
     return (
       <div>
-        <Navbar color="dark" dark expand="sm" className="mb-5">
+        <Navbar color="dark" dark expand="md" className="mb-5">
           <Container>
-            <NavbarBrand href="/">ShoppingList</NavbarBrand>
+            <NavbarBrand className="text-info" href="/">
+              Psico Renacer
+            </NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
-              <Nav navbar>
+              <Nav className="mx-auto" navbar>
                 <NavItem>
-                  <NavLink href="#">Inicio</NavLink>
+                  <NavLink className="text-warning" href="#">
+                    Inicio
+                  </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="#">Quienes somos</NavLink>
+                  <NavLink className="text-warning" href="#">
+                    Quienes somos
+                  </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="#">Servicios</NavLink>
+                  <NavLink className="text-warning" href="#">
+                    Servicios
+                  </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="#">Contactenos</NavLink>
+                  <NavLink className="text-warning" href="#">
+                    Contáctenos
+                  </NavLink>
                 </NavItem>
               </Nav>
-              <Nav className="ml-auto" navbar>
+              <Nav className="mx-auto" navbar>
                 <NavItem>
-                  <NavLink href="#">WhatsApp</NavLink>
+                  <NavLink href="#">
+                    <FontAwesomeIcon
+                      icon={["fab", "whatsapp"]}
+                      color="#25d366"
+                      size="2x"
+                    />
+                  </NavLink>
                 </NavItem>
               </Nav>
             </Collapse>
