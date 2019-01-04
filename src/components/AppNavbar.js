@@ -10,12 +10,28 @@ import {
   NavLink
 } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const fadeIn = keyframes`
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+`;
 
 const CustomNavLink = styled.a`
-  color: gold;
-  :hover {
-    color: grey;
+  color: white;
+  text-decoration: none;
+  margin: 1em 1em;
+  padding: 0.25em 0.25em;
+  font-size: 1rem;
+
+  &:hover {
+    color: white;
+    text-decoration: none;
+    animation: 0.5s ${fadeIn} ease-in;
     border-top: 3px solid gold;
     border-bottom: 3px solid gold;
   }
@@ -44,24 +60,16 @@ class AppNavbar extends Component {
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="mx-auto" navbar>
                 <NavItem>
-                  <NavLink className="text-warning" href="#">
-                    Inicio
-                  </NavLink>
+                  <CustomNavLink href="#">Inicio</CustomNavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink className="text-warning" href="#">
-                    Quienes somos
-                  </NavLink>
+                  <CustomNavLink href="#">Quienes Somos</CustomNavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink className="text-warning" href="#">
-                    Servicios
-                  </NavLink>
+                  <CustomNavLink href="#">Servicios</CustomNavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink className="text-warning" href="#">
-                    Contáctenos
-                  </NavLink>
+                  <CustomNavLink href="#">Contáctenos</CustomNavLink>
                 </NavItem>
               </Nav>
               <Nav className="mx-auto" navbar>
