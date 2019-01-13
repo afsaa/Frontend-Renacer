@@ -10,7 +10,7 @@ import {
   NavLink
 } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 
 const CustomNavLink = styled.a`
   color: white !important;
@@ -40,7 +40,7 @@ class AppNavbar extends Component {
   render() {
     return (
       <div>
-        <Navbar color="dark" dark expand="md" className="mb-5">
+        <Navbar color="dark" dark expand="md" className="mb-0">
           <Container>
             <NavbarBrand className="text-light" href="/">
               Psico Renacer
@@ -63,7 +63,7 @@ class AppNavbar extends Component {
               </Nav>
               <Nav className="mx-auto" navbar>
                 <NavItem>
-                  <NavLink href="https://wa.me/573147175246/">
+                  <NavLink href="https://wa.me/573147175246?text=Hola%20estoy%20interesado%20en%20sus%20servicios">
                     <FontAwesomeIcon
                       icon={["fab", "whatsapp"]}
                       color="#25d366"
