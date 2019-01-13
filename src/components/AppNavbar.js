@@ -12,17 +12,6 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { keyframes } from "styled-components";
 
-const slideInUpAnimation = keyframes`
-  from {
-    transform: translate3d(0, 100%, 0);
-    visibility: visible;
-  }
-
-  to {
-    transform: translate3d(0, 0, 0);
-  }
-  `;
-
 const CustomNavLink = styled.a`
   color: white !important;
   text-decoration: none !important;
@@ -33,7 +22,7 @@ const CustomNavLink = styled.a`
   :hover {
     border-top: 3px solid gold;
     border-bottom: 3px solid gold;
-    animation: ${slideInUpAnimation} 2s;
+    font-weight: 500;
   }
 `;
 
@@ -53,7 +42,7 @@ class AppNavbar extends Component {
       <div>
         <Navbar color="dark" dark expand="md" className="mb-5">
           <Container>
-            <NavbarBrand className="text-info" href="/">
+            <NavbarBrand className="text-light" href="/">
               Psico Renacer
             </NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
@@ -74,7 +63,7 @@ class AppNavbar extends Component {
               </Nav>
               <Nav className="mx-auto" navbar>
                 <NavItem>
-                  <NavLink href="#">
+                  <NavLink href="https://wa.me/573147175246/">
                     <FontAwesomeIcon
                       icon={["fab", "whatsapp"]}
                       color="#25d366"
