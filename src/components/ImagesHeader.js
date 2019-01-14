@@ -1,11 +1,21 @@
 import React, { Component } from "react";
-import { Container, Row, Col } from "reactstrap";
+import {
+  Container,
+  Row,
+  Col,
+  Card,
+  CardTitle,
+  CardText,
+  CardImg,
+  CardImgOverlay
+} from "reactstrap";
 import PropTypes from "prop-types";
 
 import Relaxing1 from "../img/Relaxing1.jpg";
-import Relaxing2 from "../img/Relaxing2.jpg";
-import Therapy1 from "../img/Therapy1.jpeg";
-import Therapy2 from "../img/Therapy2.jpeg";
+//import Relaxing2 from "../img/Relaxing2.jpg";
+//import Therapy1 from "../img/Therapy1.jpeg";
+//import Therapy2 from "../img/Therapy2.jpeg";
+import Therapy3 from "../img/Therapy3.jpg";
 
 Container.propTypes = {
   fluid: PropTypes.bool
@@ -19,20 +29,25 @@ export default class ImagesHeader extends Component {
         <Container fluid>
           <Row>
             <Col xs="12" sm="6" lg="4" className="p-0">
-              <img
-                src={Relaxing1}
-                alt="Responsive image1"
-                className="img-fluid"
-              />
+              <Card inverse>
+                <CardImg src={Relaxing1} alt="Card image" />
+                <CardImgOverlay style={{ marginTop: 200 }}>
+                  <CardTitle>Centro Psicoterapeutico Renacer</CardTitle>
+                  <CardText>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Molestias, totam.
+                  </CardText>
+                </CardImgOverlay>
+              </Card>
             </Col>
             <Col xs="12" sm="6" lg="4" className="p-0">
               <img
-                src={Therapy1}
+                src={Therapy3}
                 alt="Responsive image3"
                 className="img-fluid"
               />
               <img
-                src={Therapy2}
+                src={Therapy3}
                 alt="Responsive image4"
                 className="img-fluid"
               />
