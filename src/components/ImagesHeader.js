@@ -28,7 +28,7 @@ export default class ImagesHeader extends Component {
       <React.Fragment>
         <Container fluid>
           <Row>
-            <Col xs="12" sm="6" lg="4" className="p-0">
+            <Col xs="12" sm="6" md="6" lg="4" className="p-0">
               <Card inverse>
                 <CardImg src={Relaxing1} alt="Card image" />
                 <CardImgOverlay style={{ marginTop: 200 }}>
@@ -40,7 +40,7 @@ export default class ImagesHeader extends Component {
                 </CardImgOverlay>
               </Card>
             </Col>
-            <Col xs="12" sm="6" lg="4" className="p-0">
+            <Col xs="12" sm="6" md="6" lg="4" className="p-0">
               <img
                 src={Therapy3}
                 alt="Responsive image3"
@@ -52,7 +52,13 @@ export default class ImagesHeader extends Component {
                 className="img-fluid"
               />
             </Col>
-            <Col xs="12" sm="12" lg="4" className="p-0">
+            <Col
+              xs="12"
+              sm="12"
+              md="12"
+              lg="4"
+              className="p-0 d-sm-none d-lg-block"
+            >
               <img
                 src={Relaxing1}
                 alt="Responsive image2"
