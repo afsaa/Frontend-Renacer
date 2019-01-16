@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import AppNavbar from "./components/AppNavbar";
 import ImagesHeader from "./components/ImagesHeader";
+import About from "./components/About";
 // Reacstrap
 import "bootstrap/dist/css/bootstrap.min.css";
 // Font Awesome Icons
@@ -18,6 +19,7 @@ class App extends Component {
       <div className="App">
         <AppNavbar />
         <ImagesHeader />
+        <About />
       </div>
     );
   }

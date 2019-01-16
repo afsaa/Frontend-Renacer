@@ -20,8 +20,7 @@ const CustomNavLink = styled.a`
   font-size: 1rem;
 
   :hover {
-    border-top: 3px solid gold;
-    border-bottom: 3px solid gold;
+    border-bottom: 2px solid steelblue;
     font-weight: 500;
   }
 `;
@@ -49,10 +48,10 @@ class AppNavbar extends Component {
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="mx-auto" navbar>
                 <NavItem>
-                  <CustomNavLink href="#">Inicio</CustomNavLink>
+                  <CustomNavLink href="/">Inicio</CustomNavLink>
                 </NavItem>
                 <NavItem>
-                  <CustomNavLink href="#">Quienes Somos</CustomNavLink>
+                  <CustomNavLink href="#about">Quienes Somos</CustomNavLink>
                 </NavItem>
                 <NavItem>
                   <CustomNavLink href="#">Servicios</CustomNavLink>
