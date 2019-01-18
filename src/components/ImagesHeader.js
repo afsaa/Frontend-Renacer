@@ -11,11 +11,8 @@ import {
 } from "reactstrap";
 import PropTypes from "prop-types";
 
-import Relaxing1 from "../img/Relaxing1.jpg";
-//import Relaxing2 from "../img/Relaxing2.jpg";
-//import Therapy1 from "../img/Therapy1.jpeg";
-//import Therapy2 from "../img/Therapy2.jpeg";
-import Therapy3 from "../img/Therapy3.jpg";
+import Relaxing1 from "../img/header/Relaxing1.jpg";
+import Therapy1 from "../img/header/Therapy1.jpg";
 
 Container.propTypes = {
   fluid: PropTypes.bool
@@ -44,12 +41,12 @@ export default class ImagesHeader extends Component {
             </Col>
             <Col xs="12" sm="6" md="6" lg="4" className="p-0">
               <img
-                src={Therapy3}
+                src={Therapy1}
                 alt="Responsive image3"
                 className="img-fluid"
               />
               <img
-                src={Therapy3}
+                src={Therapy1}
                 alt="Responsive image4"
                 className="img-fluid"
               />
