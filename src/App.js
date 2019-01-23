@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import AppNavbar from "./components/AppNavbar";
 import ImagesHeader from "./components/ImagesHeader";
 import About from "./components/About";
-import Services from './components/Services'
+import Services from './components/Services';
+import Testimonials from './components/Testimonials';
 // Reacstrap
 import "bootstrap/dist/css/bootstrap.min.css";
 // Font Awesome Icons
@@ -22,6 +23,7 @@ class App extends Component {
         <ImagesHeader />
         <About />
         <Services />
+        <Testimonials />
       </div>
     );
   }
