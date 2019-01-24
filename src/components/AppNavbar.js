@@ -18,10 +18,19 @@ const CustomNavLink = styled.a`
   margin: 1em 1em;
   padding: 0.25em 0.25em;
   font-size: 1rem;
+  display: inline-block;
 
-  :hover {
-    border-bottom: 2px solid steelblue;
-    font-weight: 500;
+  ::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: steelblue;
+    transition: width .4s;
+  }
+
+  :hover::after {
+    width: 100%;
   }
 `;
 
