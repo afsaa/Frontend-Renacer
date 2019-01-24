@@ -10,26 +10,26 @@ Container.propTypes = {
 
 export default function Testimonials() {
   return <React.Fragment>
-      <Container fluid>
+      <Container>
         <h1>Testimonios</h1>
         <Row>
-          <Col xs="12" sm="6" md="6" lg="6" className="mx-2 my-2">
-            <img src={Testimonial} alt="Testimonial1" style={{ borderRadius: "50%" }} />
-            <span className="mx-auto"> lorem ipsum dolor bla bla bla bla</span>
+          <Col xs="12" sm="6" md="6" lg="6" className="my-2 p-0">
+            <img src={Testimonial} alt="Testimonial1" className="float-left rounded-circle" />
+            <p className="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, blanditiis. Dicta totam nulla fuga commodi.</p>
           </Col>
-          <Col xs="12" sm="6" md="6" lg="6" className="mx-2 my-2">
-            <img src={Testimonial} alt="Testimonial1" style={{ borderRadius: "50%" }} />
-            <span className="mx-auto"> lorem ipsum dolor bla bla bla bla</span>
+          <Col xs="12" sm="6" md="6" lg="6" className="my-2 p-0">
+            <img src={Testimonial} alt="Testimonial1" className="float-left rounded-circle" />
+            <p className="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, blanditiis. Dicta totam nulla fuga commodi.</p>
           </Col>
         </Row>
         <Row>
-          <Col xs="12" sm="6" md="6" lg="6" className="mx-2 my-2">
-            <img src={Testimonial} alt="Testimonial1" style={{ borderRadius: "50%" }} />
-            <span className="mx-auto"> lorem ipsum dolor bla bla bla bla</span>
+          <Col xs="12" sm="6" md="6" lg="6" className="my-2 p-0">
+            <img src={Testimonial} alt="Testimonial1" className="float-left rounded-circle" />
+            <p className="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, blanditiis. Dicta totam nulla fuga commodi.</p>
           </Col>
-          <Col xs="12" sm="6" md="6" lg="6" className="mx-2 my-2">
-            <img src={Testimonial} alt="Testimonial1" style={{ borderRadius: "50%" }} />
-            <span className="mx-auto"> lorem ipsum dolor bla bla bla bla</span>
+          <Col xs="12" sm="6" md="6" lg="6" className="my-2 p-0">
+            <img src={Testimonial} alt="Testimonial1" className="float-left rounded-circle" />
+            <p className="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, blanditiis. Dicta totam nulla fuga commodi.</p>
           </Col>
         </Row>
       </Container>
