@@ -4,6 +4,7 @@ import ImagesHeader from "./components/ImagesHeader";
 import About from "./components/About";
 import Services from './components/Services';
 import Testimonials from './components/Testimonials';
+import Footer from './components/Footer';
 // Reacstrap
 import "bootstrap/dist/css/bootstrap.min.css";
 // Font Awesome Icons
@@ -24,6 +25,7 @@ class App extends Component {
         <About />
         <Services />
         <Testimonials />
+        <Footer />
       </div>
     );
   }
