@@ -11,13 +11,17 @@ import {
 } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
+import { Link } from 'react-router-dom'
+
+const styledLink = {
+  color:"white",
+  fontSize: "1rem",
+  textDecoration: "none"
+};
 
 const CustomNavLink = styled.a`
-  color: white !important;
-  text-decoration: none !important;
   margin: 1em 1em;
   padding: 0.25em 0.25em;
-  font-size: 1rem;
   display: inline-block;
 
   ::after {
@@ -46,8 +50,7 @@ class AppNavbar extends Component {
   };
 
   render() {
-    return (
-      <div>
+    return <div>
         <Navbar color="dark" dark expand="md" className="mb-0">
           <Container>
             <NavbarBrand className="text-light" href="/">
@@ -57,34 +60,37 @@ class AppNavbar extends Component {
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="mx-auto" navbar>
                 <NavItem>
-                  <CustomNavLink href="/">Inicio</CustomNavLink>
+                  <CustomNavLink>
+                    <Link to="/" style={styledLink}>Inicio</Link>
+                  </CustomNavLink>
                 </NavItem>
                 <NavItem>
-                  <CustomNavLink href="#about">Quienes Somos</CustomNavLink>
+                  <CustomNavLink>
+                    <Link to="/sobre-nosotros" style={styledLink}>Quienes Somos</Link>
+                  </CustomNavLink>
                 </NavItem>
                 <NavItem>
-                  <CustomNavLink href="#">Servicios</CustomNavLink>
+                  <CustomNavLink>
+                    <Link to="/servicios" style={styledLink}>Servicios</Link>
+                  </CustomNavLink>
                 </NavItem>
                 <NavItem>
-                  <CustomNavLink href="#">Contáctenos</CustomNavLink>
+                  <CustomNavLink>
+                    <Link to="/contacto" style={styledLink}>Contáctenos</Link>
+                  </CustomNavLink>
                 </NavItem>
               </Nav>
               <Nav className="mx-auto" navbar>
                 <NavItem>
                   <NavLink href="https://wa.me/573147175246?text=Hola%20estoy%20interesado%20en%20sus%20servicios">
-                    <FontAwesomeIcon
-                      icon={["fab", "whatsapp"]}
-                      color="#25d366"
-                      size="2x"
-                    />
+                    <FontAwesomeIcon icon={["fab", "whatsapp"]} color="#25d366" size="2x" />
                   </NavLink>
                 </NavItem>
               </Nav>
             </Collapse>
           </Container>
         </Navbar>
-      </div>
-    );
+      </div>;
   }
 }
 
