@@ -17,6 +17,19 @@ import "./App.css";
 library.add(fab, faEnvelope);
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      services: [
+        {id: 1, name: "Organizacional", description: "lorem ipsum dolor..."},
+        {id: 2, name: "Educativo", description: "lorem ipsum dolor..."},
+        {id: 3, name: "Social", description: "lorem ipsum dolor..."},
+        {id: 4, name: "Clínico", description: "lorem ipsum dolor..."},
+        {id: 5, name: "Otros", description: "lorem ipsum dolor..."}
+      ]
+    };
+  }
+
   render() {
     return (
       <div className="App">
