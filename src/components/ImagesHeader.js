@@ -56,7 +56,7 @@ export default class ImagesHeader extends Component {
               sm="12"
               md="12"
               lg="4"
-              className="p-0 d-sm-none d-lg-block"
+              className="p-0 d-none d-lg-block"
             >
               <img
                 src={Relaxing1}

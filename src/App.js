@@ -1,10 +1,9 @@
 import React, { Component } from "react";
-import AppNavbar from "./components/AppNavbar";
-import ImagesHeader from "./components/ImagesHeader";
-import About from "./components/About";
-import Services from './components/Services';
+import Home from './components/Home'
+import AboutUs from "./components/AboutUs";
+import ServicesAccordion from "./components/ServicesAccordion";
 import Testimonials from './components/Testimonials';
-import Footer from './components/Footer';
+import { Switch, Route } from "react-router-dom";
 // Reacstrap
 import "bootstrap/dist/css/bootstrap.min.css";
 // Font Awesome Icons
@@ -17,15 +16,28 @@ import "./App.css";
 library.add(fab, faEnvelope);
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      services: [
+        {id: 1, name: "Organizacional", description: "lorem ipsum dolor..."},
+        {id: 2, name: "Educativo", description: "lorem ipsum dolor..."},
+        {id: 3, name: "Social", description: "lorem ipsum dolor..."},
+        {id: 4, name: "Clínico", description: "lorem ipsum dolor..."},
+        {id: 5, name: "Otros", description: "lorem ipsum dolor..."}
+      ]
+    };
+  }
+
   render() {
     return (
       <div className="App">
-        <AppNavbar />
-        <ImagesHeader />
-        <About />
-        <Services />
-        <Testimonials />
-        <Footer />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/quienes-somos" component={AboutUs} />
+          <Route path="/servicios" render={(services) => <ServicesAccordion {...services} services={this.state.services} />} />
+          <Route path="/contacto" component={Testimonials} />
+        </Switch>
       </div>
     );
   }
