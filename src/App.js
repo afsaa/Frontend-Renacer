@@ -1,10 +1,9 @@
 import React, { Component } from "react";
-import AppNavbar from "./components/AppNavbar";
-import ImagesHeader from "./components/ImagesHeader";
-import About from "./components/About";
-import Services from './components/Services';
+import Home from './components/Home'
+import AboutUs from "./components/AboutUs";
+import ServicesAccordion from "./components/ServicesAccordion";
 import Testimonials from './components/Testimonials';
-import Footer from './components/Footer';
+import { Switch, Route } from "react-router-dom";
 // Reacstrap
 import "bootstrap/dist/css/bootstrap.min.css";
 // Font Awesome Icons
@@ -33,12 +32,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <AppNavbar />
-        <ImagesHeader />
-        <About />
-        <Services />
-        <Testimonials />
-        <Footer />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/quienes-somos" component={AboutUs} />
+          <Route path="/servicios" render={(services) => <ServicesAccordion {...services} services={this.state.services} />} />
+          <Route path="/contacto" component={Testimonials} />
+        </Switch>
       </div>
     );
   }
