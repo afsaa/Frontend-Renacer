@@ -1,16 +1,23 @@
 import React, { Component } from 'react'
-import {Button} from 'reactstrap';
+import { Button, Collapse } from 'reactstrap';
+import PropTypes from "prop-types";
 
 export class ServiceItem extends Component {
   render() {
+    const id = this.props.id;
     return (
         <li style={{listStyleType:"none"}}>
-            <Button color="primary" className="btn-lg" block>{this.props.name}</Button>
-            <p>{this.props.description}</p>
+            <Button color="primary" className="btn-lg" block onClick={ this.props.showInfo.bind(this,id) }>{this.props.name}</Button>
+            <Collapse isOpen={this.props.collapse}>
+              <p>{this.props.description}</p>
+            </Collapse>
         </li>
     )
   }
 }
 
-export default ServiceItem
+ServiceItem.propTypes = {
+  showInfo: PropTypes.func.isRequired
+};
 
+export default ServiceItem;
