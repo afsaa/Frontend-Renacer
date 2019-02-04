@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import Home from './components/Home'
-import AboutUs from "./components/AboutUs";
+import Home from "./components/pages/Home";
+import AboutUs from "./components/pages/AboutUs";
 import ServicesAccordion from "./components/ServicesAccordion";
-import Testimonials from './components/Testimonials';
+import Testimonials from './components/layout/Testimonials';
 import { Switch, Route } from "react-router-dom";
 import uuid from 'uuid/v1';
 // Reacstrap
