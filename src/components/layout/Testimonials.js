@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Col, Row } from 'reactstrap';
 import PropTypes from "prop-types";
-import Testimonial from '../img/testimonials/Testimonial1.jpeg';
+import Testimonial from '../../img/testimonials/Testimonial1.jpeg';
 
 Container.propTypes = {
   fluid: PropTypes.bool

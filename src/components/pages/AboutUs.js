@@ -2,7 +2,7 @@ import React from "react";
 import { Container } from "reactstrap";
 import PropTypes from "prop-types";
 
-import AboutBg from '../img/about/AboutBg.jpeg';
+import AboutBg from '../../img/about/AboutBg.jpeg';
 
 Container.propTypes = {
     fluid: PropTypes.bool

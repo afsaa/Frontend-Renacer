@@ -11,8 +11,8 @@ import {
 } from "reactstrap";
 import PropTypes from "prop-types";
 
-import Relaxing1 from "../img/header/Relaxing1.jpg";
-import Therapy1 from "../img/header/Therapy1.jpg";
+import Relaxing1 from "../../img/header/Relaxing1.jpg";
+import Therapy1 from "../../img/header/Therapy1.jpg";
 
 Container.propTypes = {
   fluid: PropTypes.bool

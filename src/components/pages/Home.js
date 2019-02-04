@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
-import AppNavbar from "./AppNavbar";
-import ImagesHeader from "./ImagesHeader";
-import About from "./About";
-import Services from "./Services";
-import Testimonials from "./Testimonials";
-import Footer from "./Footer";
+import AppNavbar from "../layout/AppNavbar";
+import ImagesHeader from "../layout/ImagesHeader";
+import About from "../layout/About";
+import Services from "../layout/Services";
+import Testimonials from "../layout/Testimonials";
+import Footer from "../layout/Footer";
 
 export class Home extends Component {
   render() {

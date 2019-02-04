@@ -10,10 +10,10 @@ import {
 } from "reactstrap";
 import PropTypes from "prop-types";
 
-import service1 from "../img/services/service1.jpeg";
-import service2 from "../img/services/service2.jpeg";
-import service3 from "../img/services/service3.jpeg";
-import service4 from "../img/services/service4.jpeg";
+import service1 from "../../img/services/service1.jpeg";
+import service2 from "../../img/services/service2.jpeg";
+import service3 from "../../img/services/service3.jpeg";
+import service4 from "../../img/services/service4.jpeg";
 
 Container.propTypes = {
   fluid: PropTypes.bool
