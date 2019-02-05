@@ -76,7 +76,7 @@ class AppNavbar extends Component {
                 </NavItem>
                 <NavItem>
                   <CustomNavLink>
-                    <Link to="/contacto" style={styledLink}>Contáctenos</Link>
+                    <Link to="/contacto" style={styledLink}>Contactenos</Link>
                   </CustomNavLink>
                 </NavItem>
               </Nav>
