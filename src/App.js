@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Home from "./components/pages/Home";
 import AboutUs from "./components/pages/AboutUs";
 import ServicesAccordion from "./components/ServicesAccordion";
-import Testimonials from './components/layout/Testimonials';
+import Contact from './components/pages/Contact';
 import { Switch, Route } from "react-router-dom";
 import uuid from 'uuid/v1';
 // Reacstrap
@@ -47,7 +47,7 @@ class App extends Component {
           <Route exact path="/" component={Home} />
           <Route path="/quienes-somos" component={AboutUs} />
           <Route path="/servicios" render={props => <ServicesAccordion services={this.state.services} showInfo={this.showInfo} />} />
-          <Route path="/contacto" component={Testimonials} />
+          <Route path="/contacto" component={Contact} />
         </Switch>
       </div>
     );
