@@ -18,6 +18,7 @@ export default function Contact() {
                 <Label for="exampleText">Escribenos tu mensaje</Label>
                 <Input type="textarea" name="text" />
             </FormGroup>
+            <div data-netlify-recaptcha="true"></div>
             <Button type="submit" className="btn-success">Enviar</Button>
         </Form>
     </Container>
