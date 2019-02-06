@@ -49,7 +49,7 @@ class App extends Component {
           <Route path="/quienes-somos" component={AboutUs} />
           <Route path="/servicios" render={props => <ServicesAccordion services={this.state.services} showInfo={this.showInfo} />} />
           <Route exact path="/contacto" component={Contact} />
-          <Route exact path="/contacto/exito" component={FormSuccess} />
+          <Route path="/exito" component={FormSuccess} />
         </Switch>
       </div>
     );
