@@ -5,8 +5,8 @@ export default function Contact() {
   return (
     <Container>
         <h1 className="mt-5">Contacto</h1>
-          <Form name="contacto" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/exito" className="mt-3">
-            <input type="hidden" name="contacto" value="contacto" />
+          <Form name="contacto" method="POST" action="/exito" className="mt-3">
+            <input type="hidden" name="form-name" value="contacto" />
             <FormGroup>
                 <Label for="exampleText">Nombre</Label>
                 <Input type="text" name="name" placeholder="Nombre" required/>
@@ -19,7 +19,6 @@ export default function Contact() {
                 <Label for="exampleText">Escribenos tu mensaje</Label>
                 <Input type="textarea" name="text" required/>
             </FormGroup>
-            <div data-netlify-recaptcha="true"></div>
             <Button type="submit" className="btn-success">Enviar</Button>
         </Form>
     </Container>
