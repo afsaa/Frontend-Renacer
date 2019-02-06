@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <Container>
         <h1 className="mt-5">Contacto</h1>
-          <Form name="contacto" method="POST" className="mt-3">
+          <Form name="contacto" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/exito" className="mt-3">
             <input type="hidden" name="form-name" value="contacto" />
             <FormGroup>
                 <Label for="exampleText">Nombre</Label>
