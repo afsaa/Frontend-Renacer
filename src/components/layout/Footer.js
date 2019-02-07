@@ -11,7 +11,7 @@ export default function Footer() {
   return (
     <React.Fragment>
         <Container fluid className="bg-dark text-white mt-2">
-            <p className="m-0 py-3">Todos los derechos reservados. &copy; 2019 PsicoRenacer</p>
+            <p className="text-center m-0 py-3">Todos los derechos reservados. &copy; 2019 PsicoRenacer</p>
         </Container>
     </React.Fragment>
   )
