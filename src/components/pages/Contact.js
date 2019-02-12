@@ -1,10 +1,17 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { Container, Button, Form, FormGroup, Label, Input } from "reactstrap";
+
+library.add(faArrowLeft);
 
 export default function Contact() {
   return (
     <Container>
-        <h1 className="mt-5">Contacto</h1>
+      <Link to="/"><Button color="link" className="mt-3"><FontAwesomeIcon icon="arrow-left" /> Volver</Button></Link>
+        <h1 className="mt-3">Contacto</h1>
           <Form name="contacto" method="POST" action="/exito" data-netlify="true" data-netlify-honeypot="bot-field" className="mt-3">
             <input type="hidden" name="form-name" value="contacto" />
             <FormGroup>
