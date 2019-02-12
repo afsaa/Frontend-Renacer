@@ -58,7 +58,7 @@ class AppNavbar extends Component {
             </NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
-              <Nav className="mx-auto" navbar>
+              <Nav className="mx-auto text-center" navbar>
                 <NavItem>
                   <CustomNavLink>
                     <Link to="/" style={styledLink}>Inicio</Link>
@@ -80,7 +80,7 @@ class AppNavbar extends Component {
                   </CustomNavLink>
                 </NavItem>
               </Nav>
-              <Nav className="mx-auto" navbar>
+              <Nav className="mx-auto text-center" navbar>
                 <NavItem>
                   <NavLink href="https://wa.me/573147175246?text=Hola%20estoy%20interesado%20en%20sus%20servicios">
                     <FontAwesomeIcon icon={["fab", "whatsapp"]} color="#25d366" size="2x" />
