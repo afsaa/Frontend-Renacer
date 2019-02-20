@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
@@ -27,7 +27,7 @@ export default function Contact() {
         </Col>
         <Col xs="12" sm="6" md="6" lg="6" style={{ backgroundColor:"#315B7D", height:"100vh" }}>
           <h2 className="text-center mt-5">Contacto</h2>
-          <Form name="contacto" method="POST" action="/exito" data-netlify="true" data-netlify-honeypot="bot-field" className="mx-auto">
+          <Form name="contacto" method="POST" action="/exito" data-netlify="true" data-netlify-honeypot="bot-field" className="mx-auto" onSubmit={ () => <Redirect to="/exito"/> }>
             <input type="hidden" name="form-name" value="contacto" />
             <FormGroup>
                 <Label for="exampleText">Nombre</Label>
