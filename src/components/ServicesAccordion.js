@@ -39,7 +39,8 @@ export class ServicesAccordion extends Component {
                         key={service.id}
                         id={service.id}
                         name={service.name}
-                        description={service.description}
+                        subCategories={service.subCategories}
+                        specificServices={service.specificServices}
                         collapse={service.collapse}
                         showInfo={this.props.showInfo}
                     />

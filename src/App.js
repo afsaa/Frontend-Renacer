@@ -22,11 +22,11 @@ class App extends Component {
     super(props);
     this.state = {
       services: [
-        { id: uuid(), name: "Organizacional", description: "lorem ipsum dolor...", collapse: false},
-        { id: uuid(), name: "Educativo", description: "lorem ipsum dolor...", collapse: false},
-        {id: uuid(), name: "Social", description: "lorem ipsum dolor...", collapse: false},
-        {id: uuid(), name: "Clínico", description: "lorem ipsum dolor...", collapse: false},
-        {id: uuid(), name: "Otros", description: "lorem ipsum dolor...", collapse: false}
+        { id: uuid(), name: "Organizacional", subCategories: ["Gestión del Talento Humano", "Capacitación y Aprendizaje Organizacional", "Psicología de la Salud Ocupacional y Factores de Riesgo Psicosocial"], specificServices: ["Manejo del estrés laboral", "Análisis y descripción de cargos", "Selección de personal"], collapse: false},
+        { id: uuid(), name: "Educativo", subCategories: [""], specificServices:["Escuelas de padres", "Elaboración de proyectos de vida", "Orientación vocacional"], collapse: false},
+        {id: uuid(), name: "Social", subCategories: ["Procesos de Desarrollo Comunitario"], specificServices:["Charlas y conferencias dedicadas a la comunidad", "Diseño e implementación de proyectos", "Participación en licitaciones"], collapse: false},
+        {id: uuid(), name: "Clínico", subCategories: [""], specificServices:["Psicoterapia a personas con trastornos psicológicos", "Asesoría psicológica individual", "Seminarios, convivencia y talleres vivenciales"], collapse: false},
+        {id: uuid(), name: "Otros", subCategories: [""], specificServices:["Clases de yoga", "Arte terapia", "Reflexología"], collapse: false}
       ]
     }
     this.showInfo = this.showInfo.bind(this);
