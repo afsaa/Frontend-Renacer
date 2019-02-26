@@ -29,12 +29,11 @@ export default class ImagesHeader extends Component {
               <Card inverse>
                 <CardImg src={Relaxing1} alt="Card image" />
                 <CardImgOverlay style={{ marginTop: 200 }}>
-                  <CardTitle style={{ fontFamily: "Lobster" }}>
+                  <CardTitle style={{ fontFamily: "Lobster", fontSize:"2rem" }}>
                     Centro Psicoterapeutico Renacer
                   </CardTitle>
-                  <CardText style={{ fontFamily: "Dancing Script" }}>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Molestias, totam.
+                  <CardText style={{ fontFamily: "Dancing Script", fontSize:"1.5rem" }}>
+                    Especialistas en estrés y relajación.
                   </CardText>
                 </CardImgOverlay>
               </Card>

@@ -23,24 +23,23 @@ const BgOverlay = {
     backgroundPosition:"center center",
     color:"#fff",
     width:"100%",
-    height:"100%",
+    height:"100vh",
     paddingTop:"10%"
 };
   return (
     <React.Fragment>
-        <Container fluid style={BgOverlay} className="text-center">
+        <Container fluid style={BgOverlay} className="p-2 text-center">
             <Link to="/"><Button color="link" className="mt-0 p-0"><FontAwesomeIcon icon="arrow-left" /> Volver</Button></Link>
-            <section className="my-1">
-                <h3>Quienes Somos</h3>
-                <p className="p-0 m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos tenetur doloribus, assumenda dignissimos deleniti in!</p>
+            <section className="m-1 p-0">
+                <h3>Quienes Somos?</h3>
             </section>
-            <section className="my-1">
+            <section className="m-2 p-0 text-left">
                 <h3>Misión</h3>
-                <p className="p-0 m-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit accusantium sunt quam aliquam praesentium ratione porro, corporis est dolorum id?</p>
+                <p className="p-0 m-0">Promover la importancia del manejo del estrés y las emociones, brindándoles productos de calidad que ayuden a disminuir la tensión que se genera día a día. Estamos seguros que como empresa lograremos dar a los clientes un servicio que se ajuste a sus necesidades. </p>
             </section>
-            <section className="my-1">
+              <section className="m-2 p-0 text-left">
                 <h3>Visión</h3>
-                <p className="p-0 m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo distinctio debitis facilis, deserunt unde dolore quidem autem eligendi fuga corrupti.</p>
+                <p className="p-0 m-0">En el año 2022 ser una empresa constituida y reconocida en cuanto a la atención integral y promotora en reducir los niveles de estrés, por la calidad y el servicio prestado.</p>
             </section>
         </Container>
     </React.Fragment>

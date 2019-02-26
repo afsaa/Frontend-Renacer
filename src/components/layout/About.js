@@ -10,9 +10,8 @@ export default function About() {
   return (
     <Container>
       <p style={AboutStyles}>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore porro
-        quam dolorem odit repellendus beatae aliquid officiis! Accusamus, rem
-        tempora!
+        <strong>Centro de Atención Integral</strong> con énfasis en la atención psicológica y manejo del estrés, a las familias, madres, parejas y personas en general.
+        Tenemos como finalidad acoger y enseñar a las personas a obtener un <strong>equilibrio emocional</strong>. 
       </p>
     </Container>
   );
