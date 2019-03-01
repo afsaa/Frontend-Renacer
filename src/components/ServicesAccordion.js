@@ -39,7 +39,8 @@ export class ServicesAccordion extends Component {
                         key={service.id}
                         id={service.id}
                         name={service.name}
-                        description={service.description}
+                        subCategories={service.subCategories}
+                        specificServices={service.specificServices}
                         collapse={service.collapse}
                         showInfo={this.props.showInfo}
                     />
@@ -48,8 +49,8 @@ export class ServicesAccordion extends Component {
         </ul>
         <Container fluid style={ BgOverlay } className="text-center">
           <blockquote className="blockquote text-center">
-            <p className="mb-0">Allí donde el agua alcanza su mayor profundidad, se mantiene más en calma.</p>
-            <footer className="blockquote-footer">William Shakespeare </footer>
+            <p className="mb-0">Las emociones inexpresadas nunca mueren. Son enterradas vivas y salen más tarde de peores formas.</p>
+            <footer className="blockquote-footer">Sigmund Freud </footer>
           </blockquote>
         </Container>
         </Fragment>
