@@ -41,6 +41,7 @@ export class ServicesAccordion extends Component {
                         name={service.name}
                         subCategories={service.subCategories}
                         specificServices={service.specificServices}
+                        cardImgSrc={service.cardImgSrc}
                         collapse={service.collapse}
                         showInfo={this.props.showInfo}
                     />
