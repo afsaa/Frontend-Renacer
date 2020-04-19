@@ -1,0 +1,21 @@
+.about-us-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-content: center;
+}
+
+.about-us-container > div {
+  justify-self: center;
+  align-self: center;
+}
+
+.about-us-container > div > p {
+  line-height: 200%;
+}
+
+@media (max-width: 600px) {
+  .about-us-container {
+    display: block;
+  }
+}
