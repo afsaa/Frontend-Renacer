@@ -10,10 +10,6 @@
   align-self: center;
 }
 
-.about-us-container > div > p {
-  line-height: 200%;
-}
-
 @media (max-width: 600px) {
   .about-us-container {
     display: block;
